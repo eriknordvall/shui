@@ -10,3 +10,11 @@ provider:
   region: eu-north-1
   iam:
     role: ${file(./config.yml):role}
+
+functions:
+  health:
+    handler: functions/health/index.handler
+    events:
+      - httpApi:
+          path: /health
+          method: GET
