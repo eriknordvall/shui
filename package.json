@@ -1,0 +1,21 @@
+{
+  "name": "shui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REST API for a digital message board where users can register, log in and publish posts.",
+  "scripts": {
+    "format": "prettier --write \"**/*.mjs\"",
+    "format:check": "prettier --check \"**/*.mjs\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eriknordvall/shui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eriknordvall/shui/issues"
+  },
+  "homepage": "https://github.com/eriknordvall/shui#readme",
+  "devDependencies": {
+    "prettier": "3.10.1"
+  }
+}

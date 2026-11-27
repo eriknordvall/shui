@@ -1,0 +1,12 @@
+# Your own Serverless org, read from config.yml (not committed - copy config.example.yml).
+org: ${file(./config.yml):org}
+# Used in the names of the Lambdas and the stack in AWS.
+service: shui
+
+provider:
+  name: aws
+  runtime: nodejs24.x
+  architecture: arm64
+  region: eu-north-1
+  iam:
+    role: ${file(./config.yml):role}
