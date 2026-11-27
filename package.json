@@ -19,6 +19,8 @@
     "prettier": "3.10.1"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1178.0",
+    "@aws-sdk/lib-dynamodb": "^3.1178.0",
     "@middy/core": "^7.9.2",
     "@middy/http-json-body-parser": "^7.9.2",
     "@middy/util": "^7.9.2"
