@@ -42,7 +42,7 @@ export const registerUser = async (username, password) => {
  * - signs a JWT with { username } that expires after 1 hour
  * @param username a validated username
  * @param password the plain-text password
- * @returns { token, username }
+ * @returns an object with token and username
  */
 export const loginUser = async (username, password) => {
   const user = await getUser(username);
