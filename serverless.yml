@@ -10,6 +10,8 @@ provider:
   region: eu-north-1
   iam:
     role: ${file(./config.yml):role}
+  environment:
+    JWT_SECRET: ${file(./config.yml):jwtSecret}
 
 functions:
   health:
