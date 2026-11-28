@@ -21,19 +21,33 @@ functions:
           path: /health
           method: GET
 
+  # Auth functions
   register:
     handler: functions/auth/register/index.handler
     events:
       - httpApi:
           path: /auth/register
           method: POST
-
   login:
     handler: functions/auth/login/index.handler
     events:
       - httpApi:
           path: /auth/login
           method: POST
+
+  # Post functions
+  getPosts:
+    handler: functions/posts/getPosts/index.handler
+    events:
+      - httpApi:
+          path: /posts
+          method: GET
+  getPostById:
+    handler: functions/posts/getPostById/index.handler
+    events:
+      - httpApi:
+          path: /posts/{postId}
+          method: GET
 
 resources:
   Resources:
